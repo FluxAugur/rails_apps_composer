@@ -6,7 +6,7 @@ prefs[:mail_view] = true if config['mail_view']
 
 if prefs[:mailcatcher]
   if rails_4?
-    add_gem 'mailcatcher', github: 'sj26/mailcatcher', group: :development
+    add_gem 'mailcatcher', github: 'mirego/mailcatcher', group: :development
   else
     add_gem 'mailcatcher', group: :development
   end
@@ -49,7 +49,7 @@ class MailPreview < MailView
   #def invitation
   #  account = Account.first
   #  inviter, invitee = account.users[0, 2]
-  #  Notifier.invitation(inviter, invitee) 
+  #  Notifier.invitation(inviter, invitee)
   #end
 
   # Factory-like pattern
